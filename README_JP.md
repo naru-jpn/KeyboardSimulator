@@ -19,11 +19,10 @@
 1. ストップ
    - 止まります。
 
-## 実装
+## 技術
 
 クラス [KeyboardSimulator](./KeyboardSimulator/Classes/KeyboardSimulator.swift) でイベントの生成と発行を行っています。
 
-[Quartz Event Services](https://developer.apple.com/documentation/coregraphics/quartz_event_services) を利用しています。
 [CGEvent](https://developer.apple.com/documentation/coregraphics/cgevent) のイニシャライザ `init(keyboardEventSource:virtualKey:keyDown:)` でキー操作のイベントを表わすイベントを生成し、[post(tap:)](https://developer.apple.com/documentation/coregraphics/cgevent/1456527-post)でイベントを発行します。
 
 `CGEvent` の生成時に指定する Virtual keycodes の定義一覧は、 `/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/Headers/Events.h` で確認することができます。
