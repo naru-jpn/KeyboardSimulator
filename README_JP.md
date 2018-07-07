@@ -26,10 +26,3 @@
 [CGEvent](https://developer.apple.com/documentation/coregraphics/cgevent) のイニシャライザ `init(keyboardEventSource:virtualKey:keyDown:)` でキー操作のイベントを表わすイベントを生成し、[post(tap:)](https://developer.apple.com/documentation/coregraphics/cgevent/1456527-post)でイベントを発行します。
 
 `CGEvent` の生成時に指定する Virtual keycodes の定義一覧は、 `/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/Headers/Events.h` で確認することができます。
-
-## 余談
-
-Firebase Analytics のイベント形式の変更によってマイグレーション作業を Google Cloud Console 上で行う必要があったのですが、
-Cloud Console は操作が60分間無いとセッションが死んでしまう仕様でマイグレーション作業はとても時間がかかるので常に見張っていないといけませんでした。
-
-人間が見張り続けるのは辛いので、このツールを作りました。
