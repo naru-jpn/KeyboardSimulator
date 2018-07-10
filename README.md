@@ -14,7 +14,7 @@ Application to simulate keyboard inputs at intervals for macOS.
 1. Apply interval 
    - Apply value representing intervals between each inputs.
    - Value of interval cannot be over 5 seconds so as to prevent dangerous behavior.
-1. Start
+1. Run
    - String is automatically inserted into focused field as a result of simulating keyboard event.
 1. Stop
    - Simulation stops.
